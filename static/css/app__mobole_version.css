@@ -4,7 +4,8 @@
   .header__h1,
   .header__text_down,
   .banner__text h3,
-  .contact__text h3 {
+  .contact__text h3,
+  .reviews__text h3 {
     font-size: 20px;
     padding: 10px;
     line-height: 25px;
@@ -30,7 +31,10 @@
   .reviews__item {
     width: 100%;
   }
-
+  .form__row {
+    width: 80%;
+    margin: auto;
+  }
   .menu__list_item h3,
   .menu__list_description p,
   .menu__list_price,
@@ -84,7 +88,7 @@
     justify-content: center;
   }
   .content__menu_menu img {
-    width: 100%;
+    width: 98%;
   }
   .menu__list_item {
     width: 100%;
@@ -161,19 +165,53 @@
 
   .reviews__item {
     padding: 10px;
+    margin-top: 162px;
+  }
+  .reviews__text {
+    padding-top: 22px;
+  }
+
+  .reviews__text h3 {
+    height: auto;
+  }
+  .reviews,
+  .form {
+    background-image: none;
   }
 
   /* _____________________________________________________________________________________ */
 
   /* стилизация form */
 
+  .form {
+    height: 100%;
+  }
   .application__form {
-    width: 100%;
+    width: 98%;
     position: static;
-    margin: 0;
+    margin: auto;
     padding-bottom: 0;
   }
   .application__form form {
     width: 100%;
+  }
+  .form__row {
+    display: flex;
+    flex-direction: column;
+  }
+  input[name="phone"] {
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+  .form__row a {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 11px;
+    margin-bottom: 11px;
   }
 }
